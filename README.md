@@ -1,5 +1,7 @@
 # Anisotropic Convolutional Networks for 3D Semantic Scene Completion
 
+![teaser](4_teaser_720p.gif)
+
 ## Setup
 ### Environment
 - Ubuntu 16.04
