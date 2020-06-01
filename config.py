@@ -41,7 +41,7 @@ colorMap = np.array([[22, 191, 206],    # 0 empty, free space
 
 # ###########################################################################################
 
-class_weights = torch.FloatTensor([0.3, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1])
+class_weights = torch.FloatTensor([0.05, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1])
 
 
 
