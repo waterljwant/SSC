@@ -1,9 +1,20 @@
-# Anisotropic Convolutional Networks for 3D Semantic Scene Completion
+# DDRNet: RGBD Based Dimensional Decomposition Residual Network for 3D Semantic Scene Completion
+# AICNet: Anisotropic Convolutional Networks for 3D Semantic Scene Completion
+# PALNet: Depth Based Semantic Scene Completion with Position Importance Aware Loss
 
 ![teaser](4_teaser_720p.gif)
 
 If you find this work useful in your research, please cite:
 
+    @InProceedings{Li2019ddr,
+        author    = {Li, Jie and Liu, Yu and Gong, Dong and Shi, Qinfeng and Yuan, Xia and Zhao, Chunxia and Reid, Ian},
+        title     = {RGBD Based Dimensional Decomposition Residual Network for 3D Semantic Scene Completion},
+        booktitle = {Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition},
+        month     = {June},
+        pages     = {7693--7702},
+        year      = {2019}
+    }
+    
     @inproceedings{aicnet,
       author     = {Jie Li, Kai Han, Peng Wang, Yu Liu, and Xia Yuan},
       title      = {Anisotropic Convolutional Networks for 3D Semantic Scene Completion},
