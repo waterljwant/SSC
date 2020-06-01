@@ -1,6 +1,8 @@
-# DDRNet: RGBD Based Dimensional Decomposition Residual Network for 3D Semantic Scene Completion
-# AICNet: Anisotropic Convolutional Networks for 3D Semantic Scene Completion
-# PALNet: Depth Based Semantic Scene Completion with Position Importance Aware Loss
+# Semantic Scene Completion
+
+## DDRNet: RGBD Based Dimensional Decomposition Residual Network for 3D Semantic Scene Completion
+## AICNet: Anisotropic Convolutional Networks for 3D Semantic Scene Completion
+## PALNet: Depth Based Semantic Scene Completion with Position Importance Aware Loss
 
 ![teaser](4_teaser_720p.gif)
 
