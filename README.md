@@ -36,7 +36,7 @@ You can install the requirements by running `pip install -r requirements.txt`.
 ## Data Preparation
 ### Download dataset
 
-The raw data if from [SSCNet](https://github.com/shurans/sscnet).
+The raw data can be found in [SSCNet](https://github.com/shurans/sscnet).
 
 The repackaged data can be downloaded via 
 [Google Drive](https://drive.google.com/drive/folders/15vFzZQL2eLu6AKSAcCbIyaA9n1cQi3PO?usp=sharing)
