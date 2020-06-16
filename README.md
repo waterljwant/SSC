@@ -1,14 +1,16 @@
 # Semantic Scene Completion
 
-## Papers
-- DDRNet(CVPR2019): [RGBD Based Dimensional Decomposition Residual Network for 3D Semantic Scene Completion](http://openaccess.thecvf.com/content_CVPR_2019/papers/Li_RGBD_Based_Dimensional_Decomposition_Residual_Network_for_3D_Semantic_Scene_CVPR_2019_paper.pdf)
-- AICNet(CVPR2020): [Anisotropic Convolutional Networks for 3D Semantic Scene Completion](http://openaccess.thecvf.com/content_CVPR_2020/papers/Li_Anisotropic_Convolutional_Networks_for_3D_Semantic_Scene_Completion_CVPR_2020_paper.pdf)
-- PALNet(RAL2019): [Depth Based Semantic Scene Completion with Position Importance Aware Loss](https://ieeexplore.ieee.org/document/8902045)
+## This repo contains code for the following papers
+- AICNet (CVPR2020): [Anisotropic Convolutional Networks for 3D Semantic Scene Completion](http://openaccess.thecvf.com/content_CVPR_2020/papers/Li_Anisotropic_Convolutional_Networks_for_3D_Semantic_Scene_Completion_CVPR_2020_paper.pdf)
+- DDRNet (CVPR2019): [RGBD Based Dimensional Decomposition Residual Network for 3D Semantic Scene Completion](http://openaccess.thecvf.com/content_CVPR_2019/papers/Li_RGBD_Based_Dimensional_Decomposition_Residual_Network_for_3D_Semantic_Scene_CVPR_2019_paper.pdf)
+- PALNet (RAL2019): [Depth Based Semantic Scene Completion with Position Importance Aware Loss](https://ieeexplore.ieee.org/document/8902045)
 
-![teaser](4_teaser_720p.gif)
+<p align="center">
+<img src='teaser_480p.gif' height="280" >
+</p>
 
 
-### Contents
+## Contents
 0. [Installation](#installation)
 0. [Data Preparation](#Data-Preparation)
 0. [Train and Test](#Train-and-Test)
@@ -60,26 +62,39 @@ position     = npz_file['position']	# 2D-3D projection mapping index
 
 ### Configure the data path in config.py
 
+```
 'train': '/path/to/your/training/data'
 
 'val': '/path/to/your/testing/data'
-
+```
 
 ### Train
 
+```
 bash run_SSC_train.sh
+```
 
 ### Test
 
+```
 bash run_SSC_train.sh
+```
 
 ## Visualization and Evaluation
 
 comging soon
 
 
+## Citation
 
-If you find this work useful in your research, please cite:
+If you find this work useful in your research, please cite our paper(s):
+
+    @inproceedings{Li2020aicnet,
+      author     = {Jie Li, Kai Han, Peng Wang, Yu Liu, and Xia Yuan},
+      title      = {Anisotropic Convolutional Networks for 3D Semantic Scene Completion},
+      booktitle  = {Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition},
+      year       = {2020},
+    }
 
     @InProceedings{Li2019ddr,
         author    = {Li, Jie and Liu, Yu and Gong, Dong and Shi, Qinfeng and Yuan, Xia and Zhao, Chunxia and Reid, Ian},
@@ -90,13 +105,6 @@ If you find this work useful in your research, please cite:
         year      = {2019}
     }
     
-    @inproceedings{Li2020aicnet,
-      author     = {Jie Li, Kai Han, Peng Wang, Yu Liu, and Xia Yuan},
-      title      = {Anisotropic Convolutional Networks for 3D Semantic Scene Completion},
-      booktitle  = {Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition},
-      year       = {2020},
-    }
-
     @article{li2019palnet,
 	  title={Depth Based Semantic Scene Completion With Position Importance Aware Loss},
 	  author={Li, Jie and Liu, Yu and Yuan, Xia and Zhao, Chunxia and Siegwart, Roland and Reid, Ian and Cadena, Cesar},
