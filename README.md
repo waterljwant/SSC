@@ -33,19 +33,28 @@ You can install the requirements by running `pip install -r requirements.txt`.
 
 
 
-### Data Preparation
-#### Download dataset
+## Data Preparation
+### Download dataset
 
 The raw data if from [SSCNet](https://github.com/shurans/sscnet).
 
-The repackaged data can be downloaded via
-
+The repackaged data can be downloaded via 
 [Google Drive](https://drive.google.com/drive/folders/15vFzZQL2eLu6AKSAcCbIyaA9n1cQi3PO?usp=sharing)
-
 or
-
 [BaiduYun(Access code:lpmk)](https://pan.baidu.com/s/1mtdAEdHYTwS4j8QjptISBg).
 
+The repackaged data includes:
+'''python
+rgb_tensor   = npz_file['rgb']			# pytorch tensor of color image
+depth_tensor = npz_file['depth']		# pytorch tensor of depth 
+tsdf_hr      = npz_file['tsdf_hr']  	# flipped TSDF, (240, 144, 240)
+tsdf_lr      = npz_file['tsdf_lr']  	# flipped TSDF, ( 60,  36,  60)
+target_hr    = npz_file['target_hr']	# ground truth, (240, 144, 240)
+target_lr    = npz_file['target_lr']	# ground truth, ( 60,  36,  60)
+position     = npz_file['position']		# 2D-3D projection mapping index
+'''
+
+### 
 
 ## Train and Test
 
