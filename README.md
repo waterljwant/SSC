@@ -45,13 +45,13 @@ or
 
 The repackaged data includes:
 ```python
-rgb_tensor   = npz_file['rgb']			# pytorch tensor of color image
-depth_tensor = npz_file['depth']		# pytorch tensor of depth 
+rgb_tensor   = npz_file['rgb']		# pytorch tensor of color image
+depth_tensor = npz_file['depth']	# pytorch tensor of depth 
 tsdf_hr      = npz_file['tsdf_hr']  	# flipped TSDF, (240, 144, 240)
 tsdf_lr      = npz_file['tsdf_lr']  	# flipped TSDF, ( 60,  36,  60)
 target_hr    = npz_file['target_hr']	# ground truth, (240, 144, 240)
 target_lr    = npz_file['target_lr']	# ground truth, ( 60,  36,  60)
-position     = npz_file['position']		# 2D-3D projection mapping index
+position     = npz_file['position']	# 2D-3D projection mapping index
 ```
 
 ### 
