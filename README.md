@@ -24,8 +24,8 @@
 - CUDA 10.1
 
 ### Requirements:
-- pytorch=1.4.0
-- torch_scatter
+- [pytorch](https://pytorch.org/)≥1.4.0
+- [torch_scatter](https://github.com/rusty1s/pytorch_scatter)
 - imageio
 - scipy
 - scikit-learn
@@ -33,6 +33,7 @@
 
 You can install the requirements by running `pip install -r requirements.txt`.
 
+If you use other versions of PyTorch or CUDA, be sure to select the corresponding torch_scatter version.
 
 
 ## Data Preparation
@@ -60,7 +61,7 @@ position     = npz_file['position']	# 2D-3D projection mapping index
 
 ## Train and Test
 
-### Configure the data path in config.py
+### Configure the data path in [config.py](https://github.com/waterljwant/SSC/blob/master/config.py#L9)
 
 ```
 'train': '/path/to/your/training/data'
@@ -69,15 +70,15 @@ position     = npz_file['position']	# 2D-3D projection mapping index
 ```
 
 ### Train
-
+Edit the training script [run_SSC_train.sh](https://github.com/waterljwant/SSC/blob/master/run_SSC_train.sh#L4), then run
 ```
 bash run_SSC_train.sh
 ```
 
 ### Test
-
+Edit the testing script [run_SSC_test.sh](https://github.com/waterljwant/SSC/blob/master/run_SSC_test.sh#L3), then run
 ```
-bash run_SSC_train.sh
+bash run_SSC_test.sh
 ```
 
 ## Visualization and Evaluation
