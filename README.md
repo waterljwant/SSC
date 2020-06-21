@@ -33,7 +33,7 @@
 
 You can install the requirements by running `pip install -r requirements.txt`.
 
-If you use other versions of PyTorch or CUDA, be sure to select the corresponding torch_scatter version.
+If you use other versions of PyTorch or CUDA, be sure to select the corresponding version of torch_scatter.
 
 
 ## Data Preparation
